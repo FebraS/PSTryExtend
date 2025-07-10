@@ -88,7 +88,7 @@ int main() {
     fwrite(buffer, 1, fileSize, fp);
     fclose(fp); // Tutup file setelah menulis
 
-    printf("Berhasil Reset Trial: %s\n");
+    printf("Trial Reset Successfully: %s\n");
     
     free(buffer); // Bebaskan memori yang dialokasikan
 
