@@ -1,0 +1,39 @@
+#include <winver.h> // Diperlukan untuk struktur VERSIONINFO
+
+// Resource ID untuk ikon aplikasi Anda (jika ada)
+IDI_MYICON ICON "assets/icon.ico" // Pastikan jalur ke ikon benar
+
+// Blok Informasi Versi
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION     1,0,0,0        // Versi file: Mayor, Minor, Build, Revisi
+ PRODUCTVERSION  1,0,0,0        // Versi produk: Mayor, Minor, Build, Revisi
+ FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+ FILEFLAGS       0x0L
+ FILEOS          VOS_NT_WINDOWS32 // Sistem operasi: Windows 32-bit
+ FILETYPE        VFT_APP          // Tipe file: Aplikasi
+ FILESUBTYPE     VFT_UNKNOWN      // Subtipe file: Tidak diketahui
+
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0" // Kode Bahasa (0409 = English (US), 04B0 = Unicode)
+        BEGIN
+            VALUE "CompanyName", "Febra S\0"
+            VALUE "FileDescription", "Photoshop Try Extend\0"
+            VALUE "FileVersion", "1.0.0.0\0"
+            VALUE "InternalName", "PS Try Extend\0"
+            VALUE "LegalCopyright", "Copyright 2025 - Febra\0"
+            VALUE "OriginalFilename", "pstryextend.exe\0"
+            VALUE "ProductName", "PS Try Extend\0"
+            VALUE "ProductVersion", "1.0.0.0\0"
+            VALUE "Comments", "Tool to reset Photoshop trial.\0"
+            VALUE "LegalTrademarks", "\0"
+            // Tambahkan baris lain jika diperlukan
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x04B0 // Kode Bahasa dan Charset
+    END
+END
