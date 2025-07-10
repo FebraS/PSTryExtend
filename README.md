@@ -43,7 +43,7 @@ Make sure Adobe Photoshop CC 2018 is completely closed before running this appli
 3. **Run as Administrator (Important!):**
 Since this application modifies files in the `C:\Program Files\ directory`, you must run it with administrator privileges.
 
-4. Right-click on the pstryextend.exe you compiled, then select "Run as administrator".
+4. Right-click on the `pstryextend.exe` you compiled, then select "Run as administrator".
 
 5. **Verification:**
 The application will print the message Trial Reset Successfully. if the operation is successful. 
