@@ -1,3 +1,5 @@
+// PSTryExtend/main.rc
+
 #include <winver.h> // Diperlukan untuk struktur VERSIONINFO
 
 // Resource ID untuk ikon aplikasi Anda (jika ada)
