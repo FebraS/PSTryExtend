@@ -50,7 +50,7 @@ The application will print the message Trial Reset Successfully. if the operatio
 If there are errors (e.g., file not found, no permissions), an error message will be displayed in the console.
 
 6. **Reopen Adobe Photoshop CC 2018:**
-After running the application, reopen Adobe Photoshop CC 2018 without internet connetion. 
+After running the application, reopen Adobe Photoshop CC 2018 without internet connection. 
 You may see an option to start a new trial or your trial period may have been extended.
 
 ### Warnings:
