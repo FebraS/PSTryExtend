@@ -38,7 +38,7 @@ int main() {
     fp = fopen(FILE_PATH, "rb"); // "rb" untuk membaca dalam mode biner
     if (fp == NULL) {
         perror("Error opening file");
-        printf("Pastikan path file benar dan Anda memiliki izin akses.");
+        printf("Make sure the file path is correct and you have access permissions.");
         return 1;
     }
 
@@ -63,7 +63,7 @@ int main() {
     // Cari string kunci
     pKey = strstr(buffer, KEY_STRING);
     if (pKey == NULL) {
-        printf("String kunci '%s' tidak ditemukan dalam file.\n", KEY_STRING);
+        printf("Key string '%s' not found in file.\n", KEY_STRING);
         free(buffer);
         return 1;
     }
