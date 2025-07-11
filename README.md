@@ -3,7 +3,7 @@
 <img src="https://github.com/FebraS/PSTryExtend/blob/main/assets/pstryextend.png" alt="PS Try Extend" width="250" height="250">
 
 PSTryExtend is a small utility written in C language designed to help users "reset" the trial period of Adobe Photoshop CC 2018. 
-&nbsp;This application works by modifying the application.xml file associated with the Photoshop installation, specifically changing the TrialSerialNumber to a new random value.
+This application works by modifying the application.xml file associated with the Photoshop installation, specifically changing the TrialSerialNumber to a new random value.
 
 Important: This tool is provided for educational and personal experimentation purposes. 
 Using this tool to circumvent software licensing requirements may violate terms of service or copyright laws. 
