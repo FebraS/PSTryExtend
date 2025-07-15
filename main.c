@@ -14,15 +14,12 @@
 #define KEY_STRING "<Data key=\"TrialSerialNumber\">"
 #define SERIAL_LENGTH 24
 
-// Fungsi untuk menghasilkan karakter acak (angka atau huruf kapital)
+// Fungsi untuk menghasilkan karakter acak (angka saja)
 char generateRandomChar() {
-    int r = rand() % 36; // 0-9 untuk angka, 10-35 untuk huruf A-Z
-    if (r < 10) {
-        return '0' + r;
-    } else {
-        return 'A' + (r - 10);
-    }
+    int r = rand() % 10; // 0-9 for digits
+    return '0' + r;
 }
+
 
 int main() {
     FILE *fp;
@@ -71,8 +68,8 @@ int main() {
     // Geser pointer ke awal 24 karakter yang akan diubah
     pKey += strlen(KEY_STRING);
 
-    // Ganti 24 karakter dengan karakter acak
-    for (i = 0; i < SERIAL_LENGTH; i++) {
+    // Acak lima angka terakhir
+    for (i = SERIAL_LENGTH - 5; i < SERIAL_LENGTH; i++) {
         pKey[i] = generateRandomChar();
     }
 
